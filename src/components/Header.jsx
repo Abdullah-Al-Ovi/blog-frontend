@@ -117,11 +117,10 @@ export default function Header() {
         {/* <Navbar.Link active={path === '/projects'} as={'div'}>
           <Link to='/projects'>Projects</Link>
         </Navbar.Link> */}
-        {currentUser && (
+        
           <Navbar.Link active={path === "/create-post"} as={"div"}>
             <Link to="/create-post">Create post</Link>
           </Navbar.Link>
-        )}
       </Navbar.Collapse>
     </Navbar>
   );
