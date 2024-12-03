@@ -15,6 +15,7 @@ import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
 import ErrorPage from './components/ErrorPage';
+import ContactUs from './components/ContactUs';
 
 
 
@@ -30,9 +31,11 @@ export default function App() {
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/search' element={<Search />} />
+       
         <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/create-post' element={<CreatePost />} />
+          <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route>
         <Route element={<OnlyAdminPrivateRoute />}>
